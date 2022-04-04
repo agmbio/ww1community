@@ -30,7 +30,7 @@ function closeNav() {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #EAEAEA;
   overflow-x: hidden;
   transition: 0.5s;
@@ -82,7 +82,8 @@ a.active {
     <a href="#">Contact</a>
   </div>
 </div>
-  <span style="font-size:30px;cursor:pointer;margin: 15px 10px; color: #9eb25b;" onclick="openNav()" >&#9776; </span>
+  <span style="font-size:30px;cursor:pointer; top: 10px; color: #9eb25b;  
+               right: 15px; position: absolute;" onclick="openNav()" >&#9776; </span>
   </body>
   
 </html>
