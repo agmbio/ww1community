@@ -3,19 +3,86 @@
 <head>
   <title>WW1 Community</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto+Slab&display=swap" 
+  rel="stylesheet">
+  <script>
+     function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+  </script>
   <style>
-     *{
+  *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+}
+  
+.overlay {
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1A1A1A;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #9eb25b;
+}
+    
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #9eb25b;
+  display: block;
+  transition: 0.3s;
+}
+
+a.active {
+  color: #7e997b;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #7e997b;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #9eb25b;
 }
   </style>
   </head>
-<body>
+ 
+<body style="background-color: #1A1A1A;">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#" class="active">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+  <span style="font-size:30px;cursor:pointer;margin: 15px 10px; color: #9eb25b;" onclick="openNav()" >&#9776; </span>
   </body>
+  
 </html>
