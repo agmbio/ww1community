@@ -13,7 +13,6 @@
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
   font-family: 'Roboto Slab', serif;
-  font-size: 30px;
 }
   
 .overlay {
@@ -57,14 +56,26 @@
   font-size: 60px;
   color: #9eb25b;
 }
+    
+ .main {
+   font-size:30px;
+   cursor:pointer; 
+   top: 10px;
+   color: #9eb25b;  
+   left: 15px; 
+   position: fixed;
+   font-size: 30px;
+   text-decoration: none;
+   color: #EAEAEA;
+    }
   </style>
   </head>
  
 <body style="background-color: #1A1A1A;">
-  <a href="index.html"> World War 1 <img src="images/poppy.PNG" width="20px" height="20px"> </a>
+  <a href="index.html"> World War 1 <img src="images/poppy.PNG" width="20px" height="20px"></a>
   
 <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="main" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <a href="#">About</a>
     <a href="#">Services</a>
